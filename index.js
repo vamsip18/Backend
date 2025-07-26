@@ -13,7 +13,7 @@ dotenv.config();
 const app = express();
 
 const corsOptions = {
-  origin: ['http://localhost:3000','http://localhost:3001'], // your frontend origin
+  origin: ['https://zerodha-frontend-fawn.vercel.app','https://dashboard-eight-mu-84.vercel.app',,'http://localhost:3000','http://localhost:3001'], // your frontend origin
   methods: 'GET,POST,PUT,DELETE',
   credentials: true
 };
