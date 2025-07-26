@@ -195,18 +195,18 @@ app.get("/allPositions", async(req, res) => {
   res.send(Positions);
 });
 
-app.post('/placeOrder', async(req, res) => {
-    const order = await OrderModel({
-      name: req.body.name,
-      qty: req.body.qty,
-      price: req.body.price,
-      mode: req.body.mode
-    });
+// app.post('/placeOrder', async(req, res) => {
+//     const order = await OrderModel({
+//       name: req.body.name,
+//       qty: req.body.qty,
+//       price: req.body.price,
+//       mode: req.body.mode
+//     });
 
-    await order.save();
-    // console.log(order);
-    res.send("Order Placed");
-});
+//     await order.save();
+//     // console.log(order);
+//     res.send("Order Placed");
+// });
 
 app.use('/api/send-otp', sendOtp);
 
